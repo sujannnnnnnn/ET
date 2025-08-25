@@ -8,11 +8,12 @@ class Settings(BaseSettings):
     SECRET_KEY: str
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
     CORS_ORIGINS: List[str] = [
-        "http://localhost:5173",             # local dev
-        "https://et-myfrontend.vercel.app",  # deployed frontend on Vercel
+                     # local dev
+        "https://et-myfrontend.vercel.app"  # deployed frontend on Vercel
     ]
 
     model_config = SettingsConfigDict(env_file=".env", case_sensitive=False)
 
 
 settings = Settings()
+
