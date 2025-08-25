@@ -6,3 +6,6 @@ motor==3.6.0
 pydantic-settings==2.4.0
 python-multipart==0.0.9
 pydantic[email]
+
+bcrypt==4.0.1
+passlib[bcrypt]==1.7.4
